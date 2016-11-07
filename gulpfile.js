@@ -16,7 +16,7 @@ const
   // you can also choose 'foundation-style'
   template = 'fontawesome-style',
   // you can also choose 'symbol-font-16px.sketch'
-  skethcFileName = 'symbol-font-14px.sketch'
+  sketchFileName = 'symbol-font-14px.sketch'
 
 /**
  * Recommended to get consistent builds when watching files
@@ -25,7 +25,7 @@ const
 const timestamp = Math.round(Date.now() / 1000)
 
 gulp.task('symbols', () =>
-  gulp.src(skethcFileName)
+  gulp.src(sketchFileName)
     .pipe(sketch({
       export: 'artboards',
       formats: 'svg'
